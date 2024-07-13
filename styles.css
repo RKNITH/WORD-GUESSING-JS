@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 10px 2px 10px rgba(122, 0, 134, 0.5);
+}
+
+#attempts {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#life {
+    color: rgb(189, 9, 39);
+}
+
+#word {
+    background-color: blueviolet;
+    padding: 10px 20px;
+    font-size: 50px;
+    border-radius: 6px;
+    color: rgb(78, 7, 245);
+    min-width: 70%;
+    text-align: center;
+    margin-block: 20px;
+}
+
+#input {
+    margin-block: 20px;
+}
+
+#inp {
+    background-color: rgb(24, 23, 23);
+    color: rgb(245, 237, 237);
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+.button {
+    display: flex;
+}
+
+#pass,
+#submit {
+    background-color: brown;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 27px;
+    color: aliceblue;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#pass:hover {
+    background-color: rgb(247, 6, 6);
+}
+
+#submit {
+    background-color: burlywood;
+}
+
+#submit:hover {
+    background-color: rgb(233, 135, 6);
+}
+
+#result {
+    margin: 20px;
+    font-size: 30px;
+}
+
+#answer {
+    background-color: cadetblue;
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#answer:hover {
+    background-color: rgb(7, 193, 199);
+
+}
+
+@media screen and (max-width:667) {
+    .main-container {
+        max-width: 90%;
+    }
+
+    #input {
+        max-width: 90%;
+        margin: 0 auto;
+
+    }
+
+    #inp {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+}
