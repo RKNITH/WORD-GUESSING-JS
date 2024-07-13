@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .main-container {
@@ -21,11 +22,14 @@
     padding: 20px;
     border-radius: 6px;
     box-shadow: 10px 2px 10px rgba(122, 0, 134, 0.5);
+    width: 100%;
+    max-width: 600px;
 }
 
 #attempts {
     font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #life {
@@ -35,42 +39,48 @@
 #word {
     background-color: blueviolet;
     padding: 10px 20px;
-    font-size: 50px;
+    font-size: 30px;
     border-radius: 6px;
     color: rgb(78, 7, 245);
-    min-width: 70%;
+    width: 100%;
     text-align: center;
     margin-block: 20px;
 }
 
 #input {
     margin-block: 20px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 #inp {
     background-color: rgb(24, 23, 23);
     color: rgb(245, 237, 237);
-    padding: 20px 30px;
+    padding: 15px 20px;
     border: none;
     outline: none;
     border-radius: 6px;
-    font-size: 30px;
+    font-size: 20px;
+    width: 100%;
 }
 
 .button {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
 }
 
-#pass,
-#submit {
+.button div {
     background-color: brown;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
     font-size: 27px;
     color: aliceblue;
-    margin: 20px;
+    margin: 10px 0;
     cursor: pointer;
+    text-align: center;
 }
 
 #pass:hover {
@@ -88,6 +98,7 @@
 #result {
     margin: 20px;
     font-size: 30px;
+    text-align: center;
 }
 
 #answer {
@@ -97,27 +108,25 @@
     font-size: 20px;
     color: aliceblue;
     cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #answer:hover {
     background-color: rgb(7, 193, 199);
-
 }
 
-@media screen and (max-width:667) {
-    .main-container {
-        max-width: 90%;
+@media screen and (min-width: 670px) {
+    .button {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .button div {
+        margin: 20px;
     }
 
     #input {
-        max-width: 90%;
-        margin: 0 auto;
-
+        padding: 0;
     }
-
-    #inp {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
 }
